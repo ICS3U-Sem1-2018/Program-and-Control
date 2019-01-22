@@ -59,7 +59,7 @@ public class PAC {
 								if (UserChoice==1) {
 									System.out.println("You go to the roof of miniplenty climb the radio tower and jump to your death,\nin your last moments you were an ownlife but at least you stopped the 'cycle'");
 								}if (UserChoice==2) {
-									System.out.println("You decide to go down and take stock of the rations to clear your mind and suddenly you discover Leon taking rations and putting them into his coat. 'Please don't report me' begs Leon 'i must feed the rebels'\n1. Report Leon\n2. Don't report Leon ");             
+									System.out.println("You decide to go down and take stock of the rations to clear your mind and suddenly you discover Leon taking rations and putting them into his coat. 'Please don't report me' begs Leon 'I must feed the rebels'\n1. Report Leon\n2. Don't report Leon ");             
 									UserChoice=in.nextInt();
 									in.nextLine();
 									if (UserChoice==1) {
