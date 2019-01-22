@@ -68,6 +68,8 @@ public class PAC {
 										in.nextLine();
 										if (UserChoice==1) {
 											System.out.println("'Come with us' one of the soldiers says 'bb wants to see you.' 'Hello Policia, Kill him' He says as he hands you a gun and points at Leon 'No please!' Screams Leon 'Don't do it!\n1.Kill Leon\n2.Kill bb  ");
+											UserChoice=in.nextInt();
+											in.nextLine();
 											if(UserChoice==1) {
 												System.out.println("Your loyalty to the party has been proven which is why I want you to replace me as bb, glory to the party Polizia or should I say bb\nGame Over!");
 											}if (UserChoice==2) {
@@ -79,7 +81,7 @@ public class PAC {
 											System.out.println("'Okay have it your way' Says the guard and then he shoots you.\nGame Over!");
 										}
 									}if (UserChoice==2) {
-										System.out.println("Guards capture you and you are about to be executed\n1.Beg for you life\n2.Accept death");
+										System.out.println("Guards capture you and you are about to be executed\n1.Beg for your life\n2.Accept death");
 										UserChoice=in.nextInt();
 										in.nextLine();
 										if (UserChoice==1) {
@@ -112,25 +114,32 @@ public class PAC {
 									//Game Over due to inputing incorrect input
 								}if (UserChoice!=1&&UserChoice!=2) {
 									System.out.println("We warned you what would happen if you stray from the path \nGame Over!");
+									System.exit(0);
 								}
 							}if (UserChoice!=1&&UserChoice!=2) {
 								System.out.println("We warned you what would happen if you stray from the path \nGame Over!");
+								System.exit(0);
 							}
 						}if (UserChoice!=1&&UserChoice!=2) {
 							System.out.println("We warned you what would happen if you stray from the path \nGame Over!");
+							System.exit(0);
 						}
-					}if (UserChoice!=1&&UserChoice!=2) {
+					}if (UserChoice!=1) {
 						System.out.println("We warned you what would happen if you stray from the path \nGame Over!");
+						System.exit(0);
 					}
 				}if (UserChoice!=1&&UserChoice!=2) {
 					System.out.println("We Warned You what would happen if you stray from the path \nGame Over!");
+					System.exit(0);
 				}
 			
 			}if (UserChoice==2) {
 				System.out.println("'Very well then, prepare to experience the worst pain ever.'  The party finds everyone you've ever associated with and executes them before you. \nThey force you to watch the life withering from their eyes");
 				System.out.println("Game Over!");
+				System.exit(0);
 			}if(UserChoice!=1&&UserChoice!=2) {
 				System.out.println("We warned you what would happen if you stray from the path \nGame Over!");
+				System.exit(0);
 			}
 			System.exit(0);
 			//Dictionary of Newspeak
@@ -165,6 +174,7 @@ public class PAC {
 			System.out.println("");
 		}else {
 			System.out.println("We warned you what would happen if you stray from the path \nGame Over!");
+			System.exit(0);
 		}
 	}
 }
